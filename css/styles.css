@@ -1,0 +1,316 @@
+/*excercise 1*/
+.aside{
+height:400px; width:400px;
+background:grey;
+float:left; padding: 10px;
+text-align:justify;
+}
+
+
+/*excercise 2*/
+.ScreenCenter{
+height:350px; width:350px;
+background:rgb(206,206,206);
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  padding:15px;
+}
+
+/*excercise 3*/
+div  a:link{color: rgb(0,0,0); text-decoration:none;}
+	div a:visited{color: rgb(0,0,0)}
+	div a:hover{color: rgb(255,255,206)}
+
+/*excercise 4*/	
+.MultipleBackground{
+width:1200px; height:1200px;
+margin-left:auto;margin-right:auto;
+background-repeat:no-repeat;
+  background-image:
+  url(../images/HTML5.svg),
+  url(../images/catB.svg),
+    url(../images/HouseIcon.png), 
+    url(../images/linearSVGgradient.svg);
+	background-position:center center, left top, right top, right bottom;
+ 
+  /* Mozilla gradient syntax */
+  background-image:
+  url(../images/HTML5.svg),
+  url(../images/catB.svg),
+    url(../images/HouseIcon.png),
+    -moz-linear-gradient(0% 0% 270deg,
+    rgba(0,0,0,0.4) 0, 
+    rgba(0,0,0,0) 37%,
+    rgba(0,0,0,0) 83%, 
+    rgba(0,0,0,0.06) 92%, 
+    rgba(0,0,0,0) 98%);
+	background-position:center center, left top, right top, right bottom;
+ 
+  /* W3C gradient syntax for WebKit */
+  background-image:
+   url(../images/HTML5.svg),
+  url(../images/catB.svg),
+    url(../images/HouseIcon.png),
+    -webkit-linear-gradient(top,
+    rgba(0,0,0,0.4) 0, 
+    rgba(0,0,0,0) 37%,
+    rgba(0,0,0,0) 83%, 
+    rgba(0,0,0,0.06) 92%, 
+    rgba(0,0,0,0) 98%);
+	background-position:center center, left top, right top, right bottom;
+background-position:center center, left top, right top, right bottom;
+  
+ /* W3C gradient syntax for Opera */
+  background-image:
+  url(../images/HTML5.svg),
+  url(../images/catB.svg),
+    url(../images/HouseIcon.png),
+    -o-linear-gradient(top,
+    rgba(0,0,0,0.4) 0, 
+    rgba(0,0,0,0) 37%,
+    rgba(0,0,0,0) 83%, 
+    rgba(0,0,0,0.06) 92%, 
+    rgba(0,0,0,0) 98%);
+	background-position:center center, left top, right top, right bottom;
+ 
+  /* Unprefixed W3C syntax */ 
+  background-image:
+  url(../images/HTML5.svg),
+  url(../images/catB.svg),
+    url(../images/HouseIcon.png),
+    linear-gradient(top,
+    rgba(0,0,0,0.4) 0, 
+    rgba(0,0,0,0) 37%,
+    rgba(0,0,0,0) 83%, 
+    rgba(0,0,0,0.06) 92%, 
+    rgba(0,0,0,0) 98%);
+	background-position:center center, left top, right top, right bottom;
+ 
+  /* Old WebKit syntax */
+  background-image:
+  url(../images/HTML5.svg),
+  url(../images/catB.svg),
+    url(../images/HouseIcon.png), 
+    -webkit-gradient(linear, 
+    from(rgba(0,0,0,0.4)), 
+    color-stop(37%, rgba(0,0,0,0)),
+    color-stop(83%, rgba(0,0,0,0)), 
+    color-stop(92%, rgba(0,0,0,0.16)), 
+    color-stop(98%, rgba(0,0,0,0)));
+
+}
+
+/*excercise 5*/
+div img:hover{
+/*
+animation-name:myfirst;
+animation-duration:5s;
+animation-timing-function:linear;
+animation-delay:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Safari and Chrome: */
+/*-webkit-animation-name:myfirst;
+-webkit-animation-duration:3s;
+-webkit-animation-timing-function:linear;
+/*-webkit-animation-delay:0.2s;*/
+/*-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+*/
+animation: myfirst 5s linear 2s infinite alternate;
+/* Safari and Chrome: */
+-webkit-animation: myfirst 3s linear 0.5s infinite alternate;
+}
+
+@keyframes myfirst
+{
+0%   {left:0px; top:0px;}
+25%  {left:200px; top:0px;}
+50%  {left:200px; top:200px;}
+75%  {left:0px; top:200px;}
+100% {left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%{
+        -webkit-transform: rotate(0deg);
+    }
+	25%{
+	-webkit-transform: rotate(20deg)translateX(40px);
+	}
+	50%{-webkit-transform: rotate(-20deg)translateX(-40px);}
+   
+75%{-webkit-transform: rotate(20deg)translateX(40px);}
+100%{ -webkit-transform:rotate(0deg)translateX(0px);}
+}
+
+/*Excercise 6*/
+
+.fancyBtn {
+display: block;
+  text-decoration: none;
+  border: 5px double;
+  color: rgb(0,128,255); 
+  text-align: center;
+  font-size: 28px;
+  margin:40px 20px;
+  margin-left:auto;margin-right:auto;
+  padding: 15px 0;
+  
+border-radius: 25px;
+-moz-border-radius: 25px;
+background-image:linear-gradient(90deg, rgb(0,0,0), #FFF 55%, rgb(0,0,0));
+
+}
+
+.formScreen{
+ width:350px;
+background:rgb(206,206,206);
+background-image:url(../images/paper.jpg);
+  margin:auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  padding:10px;
+  border:2px solid rgb(0,0,0);
+  border-radius: 25px;
+-moz-border-radius: 25px;
+}
+
+/*excercise 7*/
+.MasterCenter{
+margin-left:auto;margin-right:auto;
+width:1200px; height:600px;background-repeat:no-repeat; background: rgb(206,206,206);
+background-image:url(../images/paper.jpg);
+}
+header{width:1200px; height:150px;background: rgb(0,0,0);}
+nav{width:1200px; height:50px;background: rgb(255,255,255);}
+#div1{width:130px; height:300px;margin:20px 10px;background:rgb(0,0,0); float:left;}
+#div2{width:580px;height:300px; margin:20px 10px;background:rgb(0,0,0); float:left;}
+#div3{width:430px;height:300px; margin:20px 10px;background:rgb(0,0,0); float:left;}
+footer{width:1200px; height:100px; background: rgb(0,0,0); clear:both; margin-bottom:10px;}
+
+::-moz-selection{ 
+  background: #484848;
+  color:rgb(0,128,255);
+
+} 
+::selection { 
+  background:#87CEEB; 
+  color:rgb(0,128,255);
+
+}
+/*excercise 8*/
+#div2 p{color:rgb(255,255,255); margin:10px; text-align:justify;}
+#div2 p span{font-family:verdana; font-size:18px; color:rgb(0,128,255); background:rgb(255,255,255);}
+
+/*excercise 9*/
+#onlyP, #OnlyP2, #OnlyP3{
+margin-left:auto;margin-right:auto;
+height:300px; width:800px;
+}
+#onlyP p:first-letter{
+font-size:3em;
+}
+
+
+/*Excercise 10*/
+#onlyP2 p {text-align:center;}
+#onlyP2 p span{display:inline-block;}
+#onlyP2 p span:hover{
+ font-size:3em;
+-webkit-transform:translatey(-20px);/*ALWAYS to allow translate webkit will only allow us to process them in in-line display elements*/
+-webkit-transition: all 1s linear 50ms;
+ 
+}
+
+/*Excercise 11*/
+#onlyP3{padding:10px; }
+
+#onlyP3 h1,#onlyP3 h2, #onlyP3 p{
+margin:0px;
+display: inline; 
+}
+h1,h2{color:rgb(0,128,255); font-family:verdana; font-style:italic;}
+
+/*Excercise 12*/
+#navMenu{
+margin-left:auto;margin-right:auto;
+width:1200px; background-repeat:no-repeat; background: rgb(206,206,206);
+background-image:url(../images/paper.jpg);
+}
+#navMenu nav, #navMenu footer, #mTop{ width: 1000px; margin-left:auto; margin-right:auto;	
+	 padding:20px;
+	 border: 4px double;
+	font-family:kavoon; font-size:15px;
+	background: rgb(206,206,206);
+	clear:both;
+	  border-radius: 25px;
+-moz-border-radius: 25px;}
+
+
+#mLeft, #mRight{width:230px; margin:20px 10px;background:rgb(206,206,206); float:left;
+ padding:10px;
+	 border: 4px double;
+  border-radius: 25px;
+-moz-border-radius: 25px;}
+#navMenu ul{  margin-left:auto; margin-right:auto;}
+	#navMenu nav ul, #navMenu footer ul, #mTop ul{ margin-left:auto; margin-right:auto; display:block;
+	position:relative;
+	}
+	#navMenu nav li, #navMenu footer  li, #mTop li, #mBottom li {color: rgb(0,0,0); display:inline; font-weight:bold; list-style-type:none; margin:20px 0px; font-size:21px;text-align:center;
+	border-right:2px solid rgb(125,125,125); padding:0px 15px;
+	}
+	#navMenu a:link{color: rgb(0,0,0); text-decoration:none;}
+	#navMenu a:visited{color: rgb(0,0,0)}
+	#navMenu a:hover{color: rgb(255,255,206)}
+	
+#mLeft ul, #mRight ul{border:none;}	
+#mLeft  li, #mRight li{color: rgb(0,0,0); font-weight:bold; list-style-type:none; margin:20px 0px; font-size:21px;text-align:center;
+	border:none;
+	}
+	 #mRight{float:rigth;}
+#optionDiv{background-image:linear-gradient(90deg, rgb(0,0,0), #FFF 55%, rgb(0,0,0));
+margin-left:auto; margin-right:auto;
+margin:20px 10px; width:780px;height:300px; float:left;
+  border-radius: 25px;
+-moz-border-radius: 25px;
+}
+#mLeft, #mBottom, #mRight{display:none;}
+
+header h1{text-align:center;font-weight:bold;font-style:underline;}
+
+
+#mLeft li ul, #mTop li ul , #mRight li ul, #mBottom li ul, #mRight ul ul{
+    display:none;
+position:relative;
+-webkit-transition: all 0.5s;
+}
+#mRight li ul{position:absolute;}
+#mLeft li:hover ul, #mTop li:hover ul, #mRight li:hover ul, #mBottom li:hover ul{
+position:absolute;
+    display:inline-block;
+    background:rgb(125,125,125);
+height:auto; width:6em;
+margin-left:5px;
+
+}
+#mLeft li ul li, #mTop li ul li, #mRight li ul li , #mBottom li ul li{
+display:block;
+    clear:both;
+border-style:none;
+-webkit-transition: all 0.5s;}
+
+
+#mTop li { -webkit-transition: all 0.2s; }
+
+#mTop li a { -webkit-transition: all 1.5s; }
+
+#mTop li ul { -webkit-transition: all 2s; }
+
+#mTop li ul li { -webkit-transition: height 0.5s; }
